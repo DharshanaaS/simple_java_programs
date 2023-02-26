@@ -1,0 +1,24 @@
+package biggestof3;
+import java.util.Scanner;
+public class Biggestof3 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter the value of A:");
+        int a=obj.nextInt();
+        System.out.println("Enter the value of B:");
+        int b=obj.nextInt();	
+        System.out.println("Enter the value of C:");
+        int c=obj.nextInt();
+        if(a>b && a>c)
+          {
+            System.out.println("A is larger")
+          }
+        else if(b>a && b>c)
+           {
+            System.out.println("B is larger");
+            }
+        else
+           {
+            System.out.println("C is larger");
+            }
+}

@@ -1,0 +1,34 @@
+package calculator;
+import java.util.Scanner;
+public class Calculator {
+ public static void main(String[] args) {
+ Scanner obj=new Scanner(System.in);
+        double num1,num2;
+        System.out.print("Enter number1:");
+        num1=obj.nextDouble();
+        System.out.print("Enter number2:");
+        num2=obj.nextDouble();
+        System.out.println("Enter any operator:");
+        char op=obj.next().charAt(0);
+        double o = 0;
+        switch(op){
+            case '+':
+                o=num1+num2;
+                break;
+            case'-':
+                o=num1-num2;
+                break;
+            case'*':
+                o=num1*num2;
+                break;
+            case'/':
+                o=num1/num2;
+                break;
+            default:
+                System.out.println("You Entered Wrong input");
+                break;
+        }
+            System.out.println("Final result:");
+            System.out.println(num1+" "+op+" "+num2+"="+o);
+        }
+ }

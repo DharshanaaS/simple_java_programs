@@ -1,0 +1,16 @@
+package sumofdigit;
+import java.util.Scanner;
+public class Sumofdigit {
+    public static void main(String[] args) {
+      Scanner obj=new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int n=obj.nextInt();
+        int tot=0,dig;
+        while(n>0){
+            dig=n%10;
+            tot+=dig;
+            n=n/10;
+        } 
+        System.out.println("The sum of digits is:"+tot);           
+    }
+}

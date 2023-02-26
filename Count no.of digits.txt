@@ -1,0 +1,21 @@
+package digit;
+import java.util.Scanner;
+public class Digit {
+public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int x=obj.nextInt();
+        if(x<10){
+        System.out.println("The given number has 1 digit");
+        }
+        else if(x<100){
+        System.out.println("The given number has 2 digits");
+        }
+        else if(x<1000){
+        System.out.println("The given number has 3 digits");
+        }
+        else{
+        System.out.println("The given number has greater than 3 digits");
+        }
+    }
+}
